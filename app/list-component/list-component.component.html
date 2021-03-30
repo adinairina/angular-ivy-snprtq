@@ -1,0 +1,7 @@
+<ul *ngIf='list.length>3'>
+    <li *ngFor="let element of list">{{element}}
+        <button (click)="userClicked(element)">Click</button>
+    </li>
+  </ul>
+<app-post [postList]='postListFromService'
+(userClickedOnPost)="handleClickFromChild($event)"></app-post>

@@ -1,0 +1,6 @@
+<div *ngFor="let item of postList">
+    <h2>{{item.title}}</h2>
+    <h4>{{item.id}}</h4>
+    <p>{{item.body}}</p>
+    <button (click)="handleClickedOnPost(item.id)">CLick and Notify Parent</button>
+</div>

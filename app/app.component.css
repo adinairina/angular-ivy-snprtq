@@ -1,0 +1,9 @@
+h1 {
+  color: red;
+}
+
+.nav-menu a{
+  padding: 20px;
+  font-size: 25;
+  font-weight: bold;
+}

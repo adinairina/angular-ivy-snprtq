@@ -1,0 +1,22 @@
+<h1>Contact Page</h1>
+<hr>
+<form>
+  
+  <div class = "form-grup">
+    <label for = "nume">Nume</label>
+    <input type ="text" id= "nume" name="nume" [(ngModel)] = "name">
+  </div>
+
+  <div class = "form-grup">
+    <label for = "prenume">Prenume</label>
+    <input type ="text" id= "prenume" name="prenume" [(ngModel)] = "prenume">
+  </div>
+
+    <div class = "form-grup">
+    <label for = "mesaj">Mesaj</label>
+    <textarea name ="mesaj" id="mesaj" cols="30" rows="10" [(ngModel)]="mesaj"></textarea>
+  </div>
+
+</form>
+
+<button (click)="saveMessage()">Save</button>
